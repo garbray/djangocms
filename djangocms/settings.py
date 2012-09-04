@@ -124,6 +124,8 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_PATH, "templates"),
 )
 
+PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
+
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.i18n',
@@ -146,6 +148,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs'
     'cms',
+    'cms_themes',
     'mptt',
     'menus',
     'south',
